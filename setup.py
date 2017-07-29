@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='RFID-UUID-USB-Card-Reader',
-    version='0.1.0',
+    version='0.1.1',
     author='Peter Steensen',
     author_email='peter.steensen.fl@googlemail.com',
     packages=['uuidreader', 'uuidreader.test'],
