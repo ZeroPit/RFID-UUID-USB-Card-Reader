@@ -1,23 +1,26 @@
-=========================
+
 RFID-UUID-USB-Card-Reader
 =========================
 
-# Hardware
+Hardware
+========
 USB RFID DeskTop ID Kartenlesegerät
 
-# Install
+Install
+=======
+pip install RFID-UUID-USB-Card-Reader
 
 
+Der RFID Reader
+===============
+Es gibt die Funktionen
+* list_devices(debug=false)
+   * Listet alle Devices auf
+* init_divice(device_id, debug=False):
+   * Gibt das ausgewählte Device zurück device_id= [1,2,..,X]
+* read(device_id, debug=false)
+   * List vom Device den RFID Tag und gibt eine UUID zurück
+* read_rfid_reader(device_id, debug=false)
+   * List vom Device den RFID Tag und gibt diesen zurück
 
-# Der RFID Reader
-Zum starten des Readers wird das Script `start_rfid_reader.sh` gestartet
-
-Die Standard Einstellungen sind die Station 1 und der Device Anschluss 0
-
-Die Python Datei scan_rfid.py benötigt das python packed evdev==0.6.4 und einen angeschlossenden RFID Reader
-
-gestartet wird das Script durch python scan_rfid.py
-
-Eingabe 1: die Station Number (1 - X )
-Eingabe 2: das divce  Number (1 - X )
 
